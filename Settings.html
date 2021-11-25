@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>Settings</title>
+</head>
+<body>
+    <header>
+        <div class="image_top">
+            <img src="images/MicrosoftTeams-image (4).png">
+        </div>
+        <div class="menu">
+            <a href="index.html">
+                <button type="button" class="menubutt">
+                    Home
+                </button>
+            </a>
+            <a href="Settings.html">
+                <button type="button" class="menubutt active">
+                    Settings
+                </button>
+            </a>
+            <a href="Report.html">
+                <button type="button" class="menubutt">
+                    Report
+                </button>
+            </a>
+        </div>
+    </header>
+    <div class="color_container">
+        <div class="color_box">
+            <div class="pic_box">
+                <img class="img_color" src="images/1.jpg">
+            </div>
+            <div class="downcont">
+                <div class="text-box">
+                    <h3>Color: Magenta</h3> <br>
+                    <h3>Basket: B1</h3> <img src="" alt="">
+                </div>
+                
+                <div class="dropdown-box">
+                    <button id="1_opendropdown" onclick="opendropdown(this.id)" class="dropbtn"><i class="fas fa-caret-square-down"></i></button>
+                    <button id="1_closedropdown" onclick="closedropdown(this.id)" class="closedropbtn"><i class="fas fa-times-circle"></i></button>
+                    <div id="1_dropdown-content" class="dropdown-content">
+                      <button id="1_bin1" onclick="selectedbutton(this.id)" type="button" class="binbutt active">BIN 1</button>
+                      <button id="1_bin2" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 2</button>
+                      <button id="1_bin3" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 3</button>
+                      <button id="1_bin4" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 4</button>
+                      <button id="1_lbin" onclick="selectedbutton(this.id)" type="button" class="binbutt">L.BIN</button>
+                      <button id="1_na" onclick="selectedbutton(this.id)" type="button" class="binbutt">N.A.</button>
+                      <button id="1_TNC" onclick="selectedbutton(this.id)" type="button" class="binbutt" style="width: 85%;">TEACH NEW COLOR</button>
+                      <div class="text_container">
+                        <p id="edit0">Magenta</p>
+                        <button onclick="startedit()" class="edit_buttons" type="submit" id="edit_button"><i class="fas fa-edit"></i></button>
+                        <button onclick="saveedit()" class="edit_done" type="submit" id="edit_done"><i class="fas fa-check-circle"></i></i></button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="color_box">
+            <div class="pic_box">
+                <img class="img_color" src="images/1.jpg">
+            </div>
+            <div class="downcont">
+                <div class="text-box">
+                    <h3>Color: Magenta</h3> <br>
+                    <h3>Basket: B1</h3> <img src="" alt="">
+                </div>
+                <div class="dropdown-box">
+                    <button id="2_opendropdown" onclick="opendropdown(this.id)" class="dropbtn"><i class="fas fa-caret-square-down"></i></button>
+                    <button id="2_closedropdown" onclick="closedropdown(this.id)" class="closedropbtn"><i class="fas fa-times-circle"></i></button>
+                    <div id="dropdown-content" class="dropdown-content">
+                      <button id="2_bin1" onclick="selectedbutton(this.id)" type="button" class="binbutt active">BIN 1</button>
+                      <button id="2_bin2" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 2</button>
+                      <button id="2_bin3" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 3</button>
+                      <button id="2_bin4" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 4</button>
+                      <button id="2_lbin" onclick="selectedbutton(this.id)" type="button" class="binbutt">L.BIN</button>
+                      <button id="2_na" onclick="selectedbutton(this.id)" type="button" class="binbutt">N.A.</button>
+                      <button id="2_TNC" onclick="selectedbutton(this.id)" type="button" class="binbutt" style="width: 85%;">TEACH NEW COLOR</button>
+                      <div class="text_container">
+                        <p id="edit0">Magenta</p>
+                        <button onclick="startedit()" class="edit_buttons" type="submit" id="edit-button"><i class="fas fa-edit"></i></button>
+                        <button onclick="saveedit()" class="edit_done" type="submit" id="edit-done"><i class="fas fa-check-circle"></i></i></button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="color_box">
+            <div class="pic_box">
+                <img class="img_color" src="images/1.jpg">
+            </div>
+            <div class="downcont">
+                <div class="text-box">
+                    <h3>Color: Magenta</h3> <br>
+                    <h3>Basket: B1</h3> <img src="" alt="">
+                </div>
+                
+                <div class="dropdown-box">
+                    <button id="3_opendropdown" onclick="opendropdown(this.id)" class="dropbtn"><i class="fas fa-caret-square-down"></i></button>
+                    <button id="3_closedropdown" onclick="closedropdown(this.id)" class="closedropbtn"><i class="fas fa-times-circle"></i></button>
+                    <div id="3_dropdown-content" class="dropdown-content">
+                      <button id="3_bin1" onclick="selectedbutton(this.id)" type="button" class="binbutt active">BIN 1</button>
+                      <button id="3_bin2" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 2</button>
+                      <button id="3_bin3" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 3</button>
+                      <button id="3_bin4" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 4</button>
+                      <button id="3_lbin" onclick="selectedbutton(this.id)" type="button" class="binbutt">L.BIN</button>
+                      <button id="3_na" onclick="selectedbutton(this.id)" type="button" class="binbutt">N.A.</button>
+                      <button id="3_TNC" onclick="selectedbutton(this.id)" type="button" class="binbutt" style="width: 85%;">TEACH NEW COLOR</button>
+                      <div class="text_container">
+                        <p id="edit0">Magenta</p>
+                        <button onclick="startedit()" class="edit_buttons" type="submit" id="edit-button"><i class="fas fa-edit"></i></button>
+                        <button onclick="saveedit()" class="edit_done" type="submit" id="edit-done"><i class="fas fa-check-circle"></i></i></button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="color_box">
+            <div class="pic_box">
+                <img class="img_color" src="images/1.jpg">
+            </div>
+            <div class="downcont">
+                <div class="text-box">
+                    <h3>Color: Magenta</h3> <br>
+                    <h3>Basket: B1</h3> <img src="" alt="">
+                </div>
+                
+                <div class="dropdown-box">
+                    <button id="4_opendropdown" onclick="opendropdown(this.id)" class="dropbtn"><i class="fas fa-caret-square-down"></i></button>
+                    <button id="4_closedropdown" onclick="closedropdown(this.id)" class="closedropbtn"><i class="fas fa-times-circle"></i></button>
+                    <div id="4_dropdown-content" class="dropdown-content">
+                      <button id="4_bin1" onclick="selectedbutton(this.id)" type="button" class="binbutt active">BIN 1</button>
+                      <button id="4_bin2" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 2</button>
+                      <button id="4_bin3" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 3</button>
+                      <button id="4_bin4" onclick="selectedbutton(this.id)" type="button" class="binbutt">BIN 4</button>
+                      <button id="4_lbin" onclick="selectedbutton(this.id)" type="button" class="binbutt">L.BIN</button>
+                      <button id="4_na" onclick="selectedbutton(this.id)" type="button" class="binbutt">N.A.</button>
+                      <button id="4_TNC" onclick="selectedbutton(this.id)" type="button" class="binbutt" style="width: 85%;">TEACH NEW COLOR</button>
+                      <div class="text_container">
+                        <p id="edit0">Magenta</p>
+                        <button onclick="startedit()" class="edit_buttons" type="submit" id="edit-button"><i class="fas fa-edit"></i></button>
+                        <button onclick="saveedit()" class="edit_done" type="submit" id="edit-done"><i class="fas fa-check-circle"></i></i></button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="run_mode">
+        <button type="submit">START RUN MODE</button>
+    </div>
+</body>
+<script>
+    function opendropdown(id_clicked){
+        extract=id_clicked.substring(0,2);
+        console.log(extract+"dropdown-content");
+        document.getElementById(extract+"dropdown-content").style.display="block";
+        console.log(extract+"dropdown-content");
+        document.getElementById(extract+"opendropdown").style.display="none";
+        console.log(extract+"dropdown-content");
+        document.getElementById(extract+"closedropdown").style.display="block";
+        console.log(extract+"dropdown-content");
+    }
+    function closedropdown(id_clicked){
+        extract=id_clicked.substring(0,2);
+        console.log(extract+"dropdown-content");
+        document.getElementById(extract+"dropdown-content").style.display="none";
+        document.getElementById(extract+"closedropdown").style.display="none";
+        document.getElementById(extract+"opendropdown").style.display="block";
+    }
+    function startedit(){
+        document.getElementById("edit_button").style.display="none";
+        document.getElementById("edit_done").style.display="block";
+    }
+    function saveedit(){
+        document.getElementById("edit_done").style.display="none";
+        document.getElementById("edit_button").style.display="block";
+    }
+    function selectedbutton(id_catch) {
+        extract=id_catch.substring(0,2);
+        console.log(id_catch);
+        document.getElementById(extract+"dropdown-content").style.display="none";
+        document.getElementById(extract+"closedropdown").style.display="none";
+        document.getElementById(extract+"opendropdown").style.display="block";
+    }
+    const para0 = document.getElementById("edit0");
+
+    edit_button.addEventListener("click", function() {
+            para0.contentEditable = true;
+            document.getElementById("edit_done").style.display="block";    
+    } );
+    edit_done.addEventListener("click", function() {
+        para0.contentEditable = false;
+        document.getElementById("edit_done").style.display="none";
+    } );
+</script>
+</html>
