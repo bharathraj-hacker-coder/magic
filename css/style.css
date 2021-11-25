@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=PT+Serif&display=swap');
+* {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: #fffffc;
+}
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #dcdcdc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e31e24;
+}
+
+
+header{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menu{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.menu .menubutt{
+    display: inline-block;
+    background-color: white;
+    border: 4px solid #F2663D;
+    border-radius: 15px;
+    font-weight: 200;
+    font-size: 36px;
+    color: #F2663D;
+    width: 150px;
+}
+
+.menu .active{
+    background-color: #F2663D;
+    color: white;
+}
+.body_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+.body_container button{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+}
+.body_container .start{
+    width: 280px;
+    height: 280px;
+    color: white;
+    border: 15px solid rgba(206, 200, 202, 0.8);
+    background: #6DBD3E;
+    box-shadow: inset 0px -110px 5px 10px rgba(32, 119, 16, 0.5);
+    border-radius: 280px;
+}
+.body_container .start:hover{
+    transition: 0.1s;
+    box-shadow: inset -20px 35px 0px rgba(32, 119, 16, 0.5), inset 20px 35px 0px rgba(32, 119, 16, 0.5), inset 0px -110px 5px 10px rgba(32, 119, 16, 0.5);
+}
+.body_container .stop{
+    width: 280px;
+    height: 280px;
+    color: white;
+    border: 15px solid rgba(206, 200, 202, 0.8);
+    background: #FE4F53;
+    box-shadow: inset 0px -110px 5px 10px rgba(182, 0, 12, 0.5);
+    border-radius: 280px;
+}
+.body_container .stop:hover{
+    box-shadow: inset -20px 35px 0px rgba(242, 7, 18, 0.5), inset 20px 35px 0px rgba(242, 7, 18, 0.5), inset 0px -110px 5px 10px rgba(182, 0, 12, 0.5);
+    transition: 0.1s;
+}
+.main_container{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.color_container1{
+    position: relative;
+    width: 300px;
+    height: 190px;
+    display: inline-block;
+    border: 2px solid #4B4B4C;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.color_container1 .img_color{
+    position: absolute;
+    width: 250px;
+    height: 56px;
+    left: 20px;
+    top: 10px; 
+}
+.color_container1 .text_index{
+    position: relative;
+    top: 80px;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #454447;
+}
+
+/*REPORT PAGE*/
+
+.shift{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-around;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   align-items: center;
+   margin-top: 20px; 
+}
+.input_container{
+    padding: 40px 0;
+}
+.input_container input{
+    width: 238px;
+    height: 65px;
+    border: 2px solid #F2663D;
+    box-sizing: border-box;
+    font-size: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+.set{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+.set .setbutt{
+    width: 200px;
+    height: 70px;
+    font-size: 36px;
+    background: #4B4B4C;
+    color: white;
+    border-radius: 20px;
+}
+.download_rp{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+.download_rp h4{
+    margin-top: 10px;
+}
+.download_rp button{
+    background: #193A6F;
+    border-radius: 20px;
+    position: relative;
+    width: 355px;
+    height: 64.57px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: white;
+}
+.table_cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+table{
+    background: #FFFFFF;
+    border: 2px solid #F2663D;
+    box-sizing: border-box;
+    width: 1255px;
+    height: 399px;
+}
+table th{
+    background: #F2663D;
+    color: white;
+    border: 2px solid #F2663D;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+}
+table td{
+    border: 2px solid #F2663D;
+    width: 613px;
+    height: 62px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+/* SETTINGS PAGE*/
+.color_container{
+    width: 100%;
+    display: flex;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.color_box{
+    position: relative;
+    width: 22%;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid #4B4B4C;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+}
+.color_box .pic_box{
+    width: 100%;
+    text-align: center;
+}
+.color_box .downcont{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    text-align: -webkit-center;
+    padding-top: 10px;
+}
+.color_box .pic_box .img_color{
+    width: 250px;
+    height: 56px;
+}
+.color_box .downcont .text-box{
+    text-align: left;
+    width: 80%;
+    line-height: 15px;
+    color: #454447;
+}
+.color_box .downcont .dropdown-box{
+    width: 20%;
+}
+.color_box .downcont .dropdown-box .dropbtn{
+  border: none;
+  outline: none;
+  display: block;
+  background-color: white;
+  z-index: -1;
+  cursor: pointer;
+}
+.color_box .downcont .dropdown-box .closedropbtn{
+  border: none;
+  outline: none;
+  display: none;
+  background-color: white;
+  z-index: -1;
+  cursor: pointer;
+}
+.color_box .downcont .dropdown-box .dropdown-content {
+    font-family: 'Bitter', serif;
+    padding: 15px 4px;
+    left: 0;
+    top: 150px;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: #ffffff;
+    border: 2px solid #4B4B4C;
+}
+.color_box .downcont .dropdown-box .dropdown-content .text_container p{
+    display: inline-block;
+    padding: 10px 10px;
+    width: 85%;
+    font-size: 22px;
+    height: 50px;
+    background-color:#ffffff;
+    color: #4B4B4C;
+    border: 2px solid #4B4B4C;
+    text-align: left;
+    margin: 5px;
+}
+.color_box .downcont .dropdown-box .dropdown-content .edit_buttons{
+  border: none;
+  outline: none;
+  display: block;
+  background-color: white;
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  cursor: pointer;
+}
+.color_box .downcont .dropdown-box .dropdown-content .edit_done{
+  border: none;
+  outline: none;
+  display: none;
+  background-color: white;
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  cursor: pointer;
+}
+.color_box .downcont .dropdown-box .dropdown-content .binbutt{
+    background: #193A6F;
+    width: 40%;
+    margin: 5px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid #193A6F;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.color_box .downcont .dropdown-box .dropdown-content .active{
+    background: #ffffff;
+    color: #193A6F;
+}
+.color_box .downcont .dropdown-box i{
+    color: #454447;
+    font-size: 40px;
+}
+
+.run_mode{
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    position: relative;
+}
+.run_mode button{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 36px;
+    background: #228B22;
+    border: 2px solid rgba(34, 139, 34, 0.25);
+    box-shadow: 0px 4px 4px rgba(34, 139, 34, 0.25);
+    border-radius: 20px;
+    color: white;
+}
