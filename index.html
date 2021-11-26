@@ -45,7 +45,7 @@
             </a>
         </div>
     </div>
-    <div class="main_container">
+    <div class="main_container" id="front_main_container">
         <div class="color_container1">
             <img class="img_color" src="images/1.jpg">
             <div class="text_index">
@@ -56,7 +56,7 @@
         <div class="color_container1">
             <img class="img_color" src="images/1.jpg">
             <div class="text_index">
-                <h3>Color: Magenta</h3> <br>
+                <h3>Color: Magenta</h3> <br><h3>Color: Magenta</h3> <br>
                 <h3>Basket: B1</h3>
             </div>
         </div>
@@ -76,4 +76,21 @@
         </div>
     </div>
 </body>
+<script>
+    function displayfrontcards() {
+        var cont_detailsf=[['1','Magenta','B1'],['1','Orange','B2'],['1','Green','B3'],['1','Yellow','B4']];
+        var divvf='';
+        for (let loop_cardf = 0; loop_cardf < cont_detailsf.length; loop_cardf++){
+            divvf+='<div class="color_container1">';
+            divvf+='<img class="img_color" src="images/'+cont_detailsf[loop_cardf][0]+'.jpg">';
+            divvf+='<div class="text_index">';
+            divvf+='<h3>Color: '+cont_detailsf[loop_cardf][1]+'</h3> <br>';
+            divvf+='<h3>Basket: '+cont_detailsf[loop_cardf][2]+'</h3>';
+            divvf+='</div>';
+            divvf+='</div>';
+        document.getElementById("front_main_container").innerHTML=divvf;
+        }
+    }
+    displayfrontcards();
+</script>
 </html>
